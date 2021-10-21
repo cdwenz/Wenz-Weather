@@ -30,7 +30,23 @@ export default function App() {
                       longitud: recurso.coord.lon
                   }
                   setDetail(ciudad);
-                  if(cities.length < 6){
+                  if(window.innerWidth < 500){
+                    if(cities.length < 2){
+                        cities.find(c => c.id === ciudad.id)?
+                            alert('Ciudad ya cargada'):
+                            setCities(oldCities =>[...oldCities, ciudad])
+                    }else{
+                        setCities(oldCities => {oldCities.shift(); return [...oldCities, ciudad]} )
+                    }
+                  }else if(window.innerWidth < 700){
+                    if(cities.length < 4){
+                        cities.find(c => c.id === ciudad.id)?
+                            alert('Ciudad ya cargada'):
+                            setCities(oldCities =>[...oldCities, ciudad])
+                    }else{
+                        setCities(oldCities => {oldCities.shift(); return [...oldCities, ciudad]} )
+                    }
+                  }else if (cities.length < 6){
                       cities.find(c => c.id === ciudad.id)?
                           alert('Ciudad ya cargada'):
                           setCities(oldCities =>[...oldCities, ciudad])

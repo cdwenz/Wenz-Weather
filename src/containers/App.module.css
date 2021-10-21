@@ -62,5 +62,6 @@
     color: aliceblue;
     margin-left: 10px;
     font-size: x-small;
+    min-width: 300px;
   }
 }
