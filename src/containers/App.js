@@ -1,11 +1,9 @@
 import React, {useState} from 'react';
-import Nav from '../components/Nav';
-import Cards from '../components/Cards';
-import SearchBar from '../components/SearchBar';
-import Ciudad from "../components/Ciudad";
-import {Route, Switch} from "react-router-dom";
+import Cards from '../components/Cards/Cards';
+import SearchBar from '../components/Search/SearchBar';
+import Ciudad from "../components/Ciudad/Ciudad";
 import styles from './App.module.css'
-import Time from '../components/date';
+import Time from '../components/Date/date';
 require('dotenv').config()
 
 export default function App() {
@@ -89,26 +87,5 @@ export default function App() {
                 </div>
          </div>
     </div>
-   // <Switch>
-   //  <div className={styles.app}>
-   //      <div className={styles.bkg} />
-   //      <div className={styles.container}>
-   //          <Route
-   //              path='/'
-   //              render={()=><SearchBar onSearch={onSearch}/>}
-   //          />
-   //          <Route
-   //              exact path="/"
-   //              render={()=><Cards cities={cities} onClose={onClose}/>}
-   //          />
-   //          <Route
-   //              exact path="/ciudad/:id" //param = id
-   //              render={({match}) => <Ciudad
-   //                  city={onFilter(match.params.id)}
-   //                  />}
-   //          />
-   //      </div>
-   //  </div>
-   // </Switch>
   );
 }

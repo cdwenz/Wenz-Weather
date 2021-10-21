@@ -1,5 +1,4 @@
 import React from 'react';
-// import {Link} from "react-router-dom";
 import styles from './card.module.css'
 import {IoCloseCircleOutline} from 'react-icons/io5'
 
@@ -7,8 +6,6 @@ export default function Card ({min, max, name, img, onClose, id, primary, onFilt
 console.log(img)
     return (
         <div className={`${styles.divPrincipal} ${primary?styles.primary:""}`}>
-{/*          <Link to={`/ciudad/${id}`}></Link> */}
-
          <span className={styles.name}>
              <button className={styles.name}  onClick={onFilter}>{name.slice(0,10)}</button>
              {!primary && <button className={styles.btn} onClick={onClose}><IoCloseCircleOutline/></button>}
