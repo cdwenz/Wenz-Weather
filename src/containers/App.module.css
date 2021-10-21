@@ -53,3 +53,13 @@
   position: absolute;
   border-radius: 1rem;
 }
+
+@media (max-width: 500px){
+  .ciudad{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row: 2;
+    color: aliceblue;
+    margin-left: 10px;
+  }
+}
