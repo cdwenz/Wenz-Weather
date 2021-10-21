@@ -8,7 +8,7 @@
     margin-left: 10px;
 }
 
-@media (max-width: 500px){
+@media (max-width: 764px){
     .fecha{
         grid-column: 2;
         grid-row: 1;
