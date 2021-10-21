@@ -1,0 +1,89 @@
+.divPrincipal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 26vh;
+    width: 8.5rem;
+    color: #ffffff99;
+}
+
+.divPrincipal + .divPrincipal{
+    border-left: solid 1px #0000001e;
+}
+
+.divPrincipal > img{
+    width: 4rem;
+    height: 4rem;
+}
+
+.primary{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 8vh 18vh;
+    width: 20rem;
+    padding: 0 0.5rem;
+}
+
+.primary > span{
+    margin-top: 0.5rem;
+    grid-column: 1 / span 2;
+}
+
+.primary > img{
+    width: 8rem;
+    height: 8rem;
+}
+
+.btn{
+    background-color: transparent;
+    border: solid 1px transparent;
+    display: flex;
+    flex-direction: column;
+    border-radius: 999px;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    font-size: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    transition: background-color 0.25s, color 0.25s;
+    cursor: pointer;
+    color: white;
+    margin-left: 0.5rem;
+    margin-right: -0.5rem;
+}
+
+.btn:hover{
+    background-color: #454A59;
+    color: #f8485e;
+}
+
+.temp{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+
+.temp + .temp{
+    margin-left: 0.5rem;
+}
+.temps{
+    display: flex;
+}
+
+.name{
+    background-color: #5E6164;
+    padding: 0.1rem 0.75rem;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    border: none;
+    color: #ffffff99;
+}
+.name:hover{
+    background-color: #454A59;
+    color: #f8485e;
+}

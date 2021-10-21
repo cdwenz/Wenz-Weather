@@ -1,0 +1,13 @@
+.ciudad{
+    backdrop-filter: blur(85px);
+    padding: 20px;
+}
+
+.datos{
+   display: flex;
+}
+
+.datos1{
+    margin-left: 25px;
+    margin-right: 25px;
+}
