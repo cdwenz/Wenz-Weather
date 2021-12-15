@@ -7,8 +7,7 @@ export default function Time () {
     function fecha(){
         var f = new Date();
         let fecha = (diasSemana[f.getDay()] + " " + 
-                        f.getDate() + " de " + meses[(f.getMonth() +1)]); 
-        console.log(diasSemana[f.getDay()] + " de " + f.getFullYear()); 
+                        f.getDate() + " de " + meses[(f.getMonth())]); 
         return fecha
     }
     return (
